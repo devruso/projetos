@@ -1,8 +1,8 @@
-let productName="Celular", produtPrice=3000, productDiscount=300, isDiscount = true, finalPrice;
+let productName="Celular", productPrice=3000, productDiscount=300, isDiscount = true, finalPrice=0;
 
 if(isDiscount == true){
-    finalPrice -= productDiscount;
-    console.log(`Parabéns! Agora o produto custa: ${finalPrice}`);
+    finalPrice = productPrice - productDiscount;
+    console.log(`Parabéns! Agora o produto custa: R$ ${finalPrice},00`);
 }else{
     console.log(`Uma pena, o produto continua: ${finalPrice}`);
 }
@@ -10,9 +10,8 @@ if(isDiscount == true){
 let clientArray = [10,2,1,30,5], finalArr = [], fullMoney = 0, control = 1;
 
 clientArray.forEach((x)=>{
-    produtPrice -= 50;
-    finalArr.push(x * produtPrice);
-    console.log(finalArr);
+    productPrice -= 50;
+    finalArr.push(x * productPrice);
 })
 
 finalArr.forEach((x)=>{   
